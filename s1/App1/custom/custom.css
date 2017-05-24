@@ -75,3 +75,13 @@ footer a {
 footer p{
     float: right;
 }
+
+section#titlebar{
+    height: 130px;
+    background: #1caa98;
+    color: #fff;
+}
+
+section#titlebar h1{
+    margin-bottom: 20px;
+}
