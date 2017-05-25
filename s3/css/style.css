@@ -1,19 +1,46 @@
 header{
-	background-image: linear-gradient(#04519b, #044687 60%, #033769);
+	background-image: linear-gradient(#04519b, #044687 55%, #033769);
 	color:#fff;
 	min-height:100px;
 	padding-top:25px;
 }
 
 header form{
-	float:right;
+	float: right;
+
 }
 
-header .logo{
-	float:left;
+header logo{
+	float: left;
 }
 
 .panel-heading{
-	background-image: linear-gradient(#04519b, #044687 60%, #033769);
+	background-image: linear-gradient(#04519b, #044687 55%, #033769);
 	color:#fff !important;
+}
+
+.comment-avatar img{
+	width: 40px;
+	margin-right: 5px;
+}
+
+.friends li{
+	list-style: none;
+	padding: 5px;
+	float: left;
+	display: inline;
+}
+
+.myfriends img{
+	width: 55px;
+}
+
+.mygroups img{
+	width: 55px;
+}
+
+.mygroups li{
+	list-style: none;
+	float: left;
+	display: inline;
 }
