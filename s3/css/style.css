@@ -165,5 +165,17 @@ footer{
 	border-bottom: 1px solid #cccccc;
 	padding-bottom: 13px;
 	margin-bottom: 17px;
+}
 
+.profile img{
+	width: 200px;
+}
+
+.profile-info{
+	margin-top: 35px;
+	margin-left: 45px;
+}
+
+.profile-info .profile-key{
+	font-weight: bold;
 }
