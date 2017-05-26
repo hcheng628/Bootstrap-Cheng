@@ -7,12 +7,9 @@ header{
 
 header form{
 	float: right;
-
 }
 
 .bubble:before{
-	/* background-color: #1caa98; */
-
 	content: '';
 	position: absolute;
 	border: 10px solid;
@@ -49,7 +46,6 @@ header form{
 }
 
 .bubble:after{
-	/* background-color: #1caa98; */
 	content: '';
 	position: absolute;
 	border-style: solid;
@@ -125,8 +121,6 @@ header logo{
 	border-bottom: solid 1px #cccccc;
 	margin-bottom: 10px;
 }
-
-
 footer{
 	background: #f4f4f4;
 	height: 90px;
@@ -136,4 +130,40 @@ footer{
 	padding-top: 40px;
 	margin-top: 30px;
 	border-top: 7px solid #04519b;
+}
+
+.members img{
+	margin-bottom: 5px;
+}
+
+.members .member-row{
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 13px;
+	margin-bottom: 17px;
+}
+@media(min-width: 770px){
+	.member-row .members-view-btn{
+		padding-top: 70px !important;
+	}
+}
+
+.groups h4{
+	color: #04519b;
+}
+
+.group-item img{
+	width: 70px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.groups button{
+	margin-top: 5px;
+}
+
+.group-item{
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 13px;
+	margin-bottom: 17px;
+
 }
