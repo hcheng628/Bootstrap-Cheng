@@ -8,10 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>Profile</title>
+    <title>Photos</title>
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/ekko-lightbox.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -50,11 +51,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#home">Home</a></li>
+                <li ><a href="#home">Home</a></li>
                 <li><a href="#members">Members</a></li>
                 <li><a href="#groups">Groups</a></li>
-                <li><a href="#photos">Photos</a></li>
-                <li class="active"><a href="#profile">Profile</a></li>
+                <li class="active"><a href="#photos">Photos</a></li>
+                <li><a href="#profile">Profile</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -64,82 +65,39 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div class="profile">
-                    <h1 class="page-header">ABC DEF</h1>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="./img/user.png" class="thumbnail" alt="">
-                        </div>
-                        <div class="col-sm-8 profile-info">
-                            <div class="container" >
-                                <span class="profile-key">
-                                    Name:
-                                </span>
-                                <span class="profile-value">
-                                    ABC DEF
-                                </span>
-                                <br/>
-                                <span class="profile-key">
-                                    Email Address:
-                                </span>
-                                <span class="profile-value">
-                                    ABC@DEF.co
-                                </span>
-                                <br/>
-                                <span class="profile-key">
-                                    City:
-                                </span>
-                                <span class="profile-value">
-                                    BOT
-                                </span>
-                                <br/>
-                                <span class="profile-key">
-                                    State:
-                                </span>
-                                <span class="profile-value">
-                                    CO
-                                </span>
-                                <br/>
-                                <span class="profile-key">
-                                    Gender:
-                                </span>
-                                <span class="profile-value">
-                                    Male
-                                </span>
-                                <br/>
-                                <span class="profile-key">
-                                    Profession:
-                                </span>
-                                <span class="profile-value">
-                                    Basket Waving
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="panel panel-default profile-wall">
-                            <div class="panel panel-heading">
-                                <h3 class="panel-title">Wall</h3>
-                            </div>
-                            <div class="panel-body">
-                                <form>
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Write Wall"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Submit</button>
-                                    <div class="pull-right">
-                                        <div class="btn-group" role="group" aria-label="...">
-                                            <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Text</button>
-                                            <button type="button" class="btn btn-default"><i class="fa fa-photo"></i> Photo</button>
-                                            <button type="button" class="btn btn-default"><i class="fa fa-video-camera"></i> Video</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="page-header">Photos</h1>
+                <ul class="photos gallery-parent">
+                    <li>
+                        <a class="thumbnail" href="./img/sample1.jpg" data-title="Image-1" data-footer="This is Image 1" data-toggle="lightbox" data-gallery="mygallery" data-cheng="Gogogo" data-placement="top" title="ChengChengCheng">
+                            <img src="./img/sample1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="thumbnail" href="./img/sample2.jpg" data-title="Image-2" data-footer="This is Image 2" data-toggle="lightbox" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Tooltip on top">
+                            <img src="./img/sample2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="thumbnail" href="./img/sample3.jpg" data-title="Image-3" data-footer="This is Image 3" data-toggle="lightbox" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Tooltip on top">
+                            <img src="./img/sample3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="thumbnail" href="./img/sample4.jpg" data-title="Image-4" data-footer="This is Image 4" data-toggle="lightbox" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Tooltip on top">
+                            <img src="./img/sample4.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="thumbnail" href="./img/sample5.jpg" data-title="Image-5" data-footer="This is Image 5" data-toggle="lightbox" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Tooltip on top">
+                            <img src="./img/sample5.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="thumbnail" href="./img/sample6.jpg" data-title="Image-6" data-footer="This is Image 6" data-toggle="lightbox" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Tooltip on top">
+                            <img src="./img/sample6.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default friends">
@@ -260,9 +218,21 @@
         <p>ABC Copyright 2017</p>
     </div>
 </footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./js/bootstrap.js"></script>
+<script src="./js/ekko-lightbox.min.js"></script>
+<script>
+    $(document).delegate('*[data-toggle="lightbox"]', 'click',function(event){
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    $(function () {
+        $('[data-hover="tooltip"]').tooltip()
+    });
+    $(function(){
+        $('[data-cheng="Gogogo"]').tooltip();
+    });
+</script>
 </body>
 </html>

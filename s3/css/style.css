@@ -179,3 +179,20 @@ footer{
 .profile-info .profile-key{
 	font-weight: bold;
 }
+
+.photos{
+	margin: 0;
+	padding: 0;
+}
+
+.photos img{
+	width: 100%;
+}
+
+.gallery-parent li{
+	list-style: none;
+	float: left;
+	margin: 5px;
+	width: 23%;
+	overflow: hidden;
+}
