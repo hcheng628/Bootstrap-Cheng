@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Signin</title>
-
+    <title>Add Category</title>
     <!-- Bootstrap core CSS -->
     <link href="./css/vendors/bootstrap.css" rel="stylesheet">
+    <link href="./css/vendors/font-awesome.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="./css/signin.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/pages.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -22,27 +25,121 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
-
-<div class="container">
-    <form class="form-signin">
-        <h2 class="form-signin-heading">Management Console Login</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar">AAA</span>
+                <span class="icon-bar">BBB</span>
+                <span class="icon-bar">CCC</span>
+            </button>
+            <a class="navbar-brand" href="index.html">Management Dashboard</a>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Dashboard</a></li>
+                <li class="active"><a href="pages.html">Pages</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="users.html">Users</a></li>
+            </ul>
+            <form class="navbar-form navbar-left search-form" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">Logout</a></li>
 
-</div> <!-- /container -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="index.html" class="list-group-item">
+                        <i class="fa fa-tachometer"></i>
+                        Dashboard
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Pages
+                    </a>
+                    <a href="categories.html" class="list-group-item active">
+                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                        Categories
+                    </a>
+                    <a href="users.html" class="list-group-item">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        User Accounts
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="page-header"><i class="fa fa-file-text-o"></i> Category</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-group pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                New
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="categories.html"></a>Categories</li>
+                    <li class="active">Category</li>
+                </ol>
+
+                <form>
+                    <div class="form-group">
+                        <label >Category Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Page Title">
+                    </div>
+                    <div class="form-group">
+                        <label>Main Image</label>
+                        <input type="file" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Copyright ABC  Reserved</p>
+</footer>
+
 <script src="./js/jQuery/jquery-3.2.1.min.js"></script>
+<script src="./js/TableSorter/jquery.tablesorter.min.js"></script>
 <script src="./js/Bootstrap/bootstrap.js"></script>
 <script src="./js/custom.js"></script>
+<script>
+</script>
 </body>
 </html>
