@@ -43,7 +43,7 @@
                 <li class="active"><a href="categories.html">Categories</a></li>
                 <li><a href="users.html">Users</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
+            <form class="navbar-form navbar-left search-form" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search">
                 </div>
@@ -113,11 +113,14 @@
                     <li class="active">Categories</li>
                 </ol>
 
-                <table class="table table-striped">
+                <table id="sort-table" class="table table-striped">
+                    <thead>
                     <tr>
                         <th></th>
-                        <th>Category Title</th>
+                        <th>Category Title <i class="fa fa-sort" aria-hidden="true"></i></th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td><input type="checkbox"></td>
                         <td>
@@ -154,6 +157,7 @@
                             <a href="category.html">Sample Category 6</a>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
@@ -185,6 +189,26 @@
 
 <script src="./js/jQuery/jquery-3.2.1.min.js"></script>
 <script src="./js/Bootstrap/bootstrap.js"></script>
+<script src="./js/TableSorter/jquery.tablesorter.min.js"></script>
 <script src="./js/custom.js"></script>
+<script>
+    $(function(){
+        $('#sort-table').tablesorter({
+            sortList: [[0,0],[1,0]]
+        });
+    });
+    $(function(){
+        var rows = $('table tbody tr');
+        $('.search-form input').keyup(function(){
+            var val = $.trim($(this).val()).replace(/ +/g,' ').toLowerCase();
+
+            rows.show().filter(function(){
+                var searchText = $(this).text().replace(/\s+/g,' ').toLowerCase();
+                // console.log("Checking: " + searchText + !~searchText.indexOf(val));
+                return !~searchText.indexOf(val);
+            }).hide();
+        });
+    });
+</script>
 </body>
 </html>

@@ -10,3 +10,7 @@ footer{
     text-align: center;
     background-color: #1f87c2;
 }
+
+.tablesorter th{
+    cursor: pointer;
+}
