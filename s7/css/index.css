@@ -47,3 +47,13 @@ section{
 .marketing h2{
     font-weight: normal;
 }
+
+#buying-options .panel-body h3, h4{
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 200;
+}
+
+#buying-options .panel-body ul{
+    list-style: none !important;
+}
