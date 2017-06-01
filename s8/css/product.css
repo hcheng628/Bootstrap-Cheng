@@ -1,0 +1,19 @@
+.price{
+    font-size: 15px;
+    color: orangered;
+    font-weight: bold;
+}
+
+
+.product-img{
+    width: 100%;
+}
+
+.panel-heading a:hover{
+    text-decoration: none;
+}
+
+.list-group-item:hover{
+    background-color: #0383c0 !important;
+    color: white !important;
+}

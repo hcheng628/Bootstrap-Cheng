@@ -166,3 +166,12 @@
         height: 100%;
     }
 }
+
+footer{
+    height: 60px;
+    background-color: #cccccc;
+    padding-top: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+}
