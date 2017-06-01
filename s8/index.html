@@ -14,140 +14,200 @@
     <link href="./css/common.css" rel="stylesheet">
 </head>
 <body>
-    <header class="index-header">
-        <div class="row">
-            <div class="container">
-                <div class="col-md-6 col-sm-12">
-                    <span class="storename-outter"><i class="fa fa-tag"></i> My<span class="storename-b">Store</span></span>
-                    <p>Bootstrap Cloud Mall</p>
-                </div>
-                <div class="col-md-6 col-sm-12 well">
-                    <form class="form-inline pull-right">
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter E-mail">
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Enter Password">
-                        </div>
-                        <button type="submit" class="btn btn-default">SignIn</button>
-                    </form>
-                </div>
+<header class="index-header">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-6 col-sm-12">
+                <span class="storename-outter"><i class="fa fa-tag"></i> My<span class="storename-b">Store</span></span>
+                <p>Bootstrap Cloud Mall</p>
+            </div>
+            <div class="col-md-6 col-sm-12 well">
+                <form class="form-inline pull-right">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Enter E-mail">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Enter Password">
+                    </div>
+                    <button type="submit" class="btn btn-default">SignIn</button>
+                </form>
             </div>
         </div>
-    </header>
-    <div class="container">
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
+    </div>
+</header>
+<div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Whats New</a></li>
-              <li><a href="#">Specials</a></li>
-              <li><a href="#">My Account</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <form class="navbar-form" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <button type="submit" class="form-control">Submit</button>
-                </div>
-              </form>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="#" role="button">View navbar docs</a>
-        </p>
-      </div>
-        <section id="product-list">
-            <div class="row">
-                <div class="container">
-                    <div class="col-md-4 product-info">
-                        <div class="container">
-                            <img src="./img/s5.png" class="thumbnail">
-                            <h3 class="title">XBox One</h3>
-                            <h3 class="price">$333.33</h3>
-                            <P class="desc">
-                                ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
-                            </P>
-                            <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                            <span>12 Reviews</span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Whats New</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form" action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit" class="form-control">Submit</button>
                         </div>
+                    </form>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
 
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+            <!-- Nav tabs -->
+            <ul class="tablist" role="tablist">
+                <li role="presentation" class="active"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">Feature</a></li>
+                <li role="presentation"><a href="#bestseller" aria-controls="bestseller" role="tab" data-toggle="tab">Best-Seller</a></li>
+                <li role="presentation"><a href="#discount" aria-controls="discount" role="tab" data-toggle="tab">Discount</a></li>
+                <li role="presentation"><a href="#preminum" aria-controls="preminum" role="tab" data-toggle="tab">Preminum</a></li>
+                <li role="presentation"><a href="#gift" aria-controls="gift" role="tab" data-toggle="tab">Gift</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="feature" >
+                    <div class="tab-content-inner">
+                        <h3>Apple iPhone</h3>
+                        <p>ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM
+                            ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM ABCDEFGHIGKLIM
+                        </p>
+                        <a href="product.html" class="btn btn-default">More Details</a>
+                        <img src="./img/iphone.png" class="tab-content-img">
                     </div>
-                    <div class="col-md-4 product-info">
-                        <img src="./img/xbox.png" class="thumbnail">
-                        <h3 class="title">XBox One</h3>
-                        <h3 class="price">$333.33</h3>
-                        <P class="desc">
-                            ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
-                        </P>
-                        <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                        <span>12 Reviews</span>
-                    </div>
-                    <div class="col-md-4 product-info">
-                        <img src="./img/ps4.png" class="thumbnail">
-                        <h3 class="title">XBox One</h3>
-                        <h3 class="price">$333.33</h3>
-                        <P class="desc">
-                            ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
-                        </P>
-                        <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                        <span>12 Reviews</span>
-                    </div>
-                    <div class="col-md-4 product-info">
-                        <img src="./img/tv.png" class="thumbnail">
-                        <h3 class="title">XBox One</h3>
-                        <h3 class="price">$333.33</h3>
-                        <P class="desc">
-                            ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
-                        </P>
-                        <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                        <span>12 Reviews</span>
-                    </div>
-                    <div class="col-md-4 product-info">
-                        <img src="./img/surface.png" class="thumbnail">
-                        <h3 class="title">XBox One</h3>
-                        <h3 class="price">$333.33</h3>
-                        <P class="desc">
-                            ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
-                        </P>
-                        <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                        <span>12 Reviews</span>
-                    </div>
-                    <div class="col-md-4 product-info">
-                        <img src="./img/ipad.png" class="thumbnail">
-                        <h3 class="title">XBox One</h3>
-                        <h3 class="price">$333.33</h3>
-                        <P class="desc">
-                            ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
-                        </P>
-                        <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-                        <span>12 Reviews</span>
-                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="bestseller">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="discount">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="preminum">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="gift">
+
                 </div>
             </div>
-        </section>
+    </div>
 
 
-    </div> <!-- /container -->
+    <section id="product-list">
+        <div class="row">
+            <div class="col-md-4 product-info">
+                <div class="thumbnail">
+                    <img src="./img/s5.png">
+                    <a href="product.html"><span class="title">Samsung S5</span></a>
+                    <span class="price">$333.33</span>
+                    <P class="desc">
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                    </P>
+                    <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i></span>
+                    <span class="reviews">12 Reviews</span>
+                </div>
+            </div>
+            <div class="col-md-4 product-info">
+                <div class="thumbnail">
+                    <img src="./img/xbox.png">
+                    <span class="title"></span>
+                    <a href="product.html"><span class="title">XBox One</span></a>
+                    <span class="price">$433.33</span>
+                    <P class="desc">
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                    </P>
+                    <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i></span>
+                    <span class="reviews">12 Reviews</span>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-info">
+                <div class="thumbnail">
+                    <img src="./img/ps4.png">
+                    <a href="product.html"><span class="title">PS 4</span></a>
+                    <span class="price">$433.33</span>
+                    <P class="desc">
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                    </P>
+                    <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i></span>
+                    <span class="reviews">12 Reviews</span>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-info">
+                <div class="thumbnail">
+
+                    <img src="./img/tv.png">
+                    <a href="product.html"><span class="title">LED TV</span></a>
+                    <span class="price">$233.33</span>
+                    <P class="desc">
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                    </P>
+                    <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i></span>
+                    <span class="reviews">12 Reviews</span>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-info">
+                <div class="thumbnail">
+
+                    <img src="./img/surface.png">
+                    <a href="product.html"><span class="title">Surface</span></a>
+                    <span class="price">$633.33</span>
+                    <P class="desc">
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                    </P>
+                    <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i></span>
+                    <span class="reviews">12 Reviews</span>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-info">
+                <div class="thumbnail">
+
+                    <img src="./img/ipad.png">
+                    <a href="product.html"><span class="title">iPad</span></a>
+                    <span class="price">$433.33</span>
+                    <P class="desc">
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                        ABCDEFGHIJKLMN OPQRSTUVWXYZ
+                    </P>
+                    <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i></span>
+                    <span class="reviews">12 Reviews</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</div> <!-- /container -->
 <script src="./js/jQuery/jquery-3.2.1.min.js"></script>
 <script src="./js/Bootstrap/bootstrap.js"></script>
 <script src="./js/custom.js"></script>

@@ -40,22 +40,100 @@
   font-weight: bold;
 }
 
-#product-list .product-info img{
-  width: 200px;
-}
 
 #product-list .product-info{
   align-content: center;
-  border: 1px solid #cccccc;
+  // border: 1px solid #cccccc;
+}
+
+#product-list .product-info img{
+  width: 130px;
+  height: 130px;
 }
 
 #product-list .product-info .title{
   color: @primary;
+  font-size: 28px;
 }
 #product-list .product-info .price{
   float: right;
+  font-size: 28px;
 }
 #product-list .product-info .desc{
   font-size: 15px;
   width: 100%;
+}
+
+#product-list .product-info .reviews{
+  float: right;
+}
+
+.jumbotron{
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+  overflow: auto !important;
+}
+
+.tablist{
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 30%;
+}
+
+.tablist li{
+  color: #666666;
+  list-style: none;
+  font-size: 15px;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px 10px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  background-color: #cccccc;
+}
+
+.tablist li:hover{
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  background-color: @primary;
+}
+
+.tablist li:hover a{
+  color: #ffffff;
+}
+
+.tablist li.active{
+  background-color: @primary;
+}
+
+.tablist li.active a{
+  color: #ffffff;
+}
+
+.tablist a{
+  color: #666666;
+  display: block;
+  text-decoration: none;
+}
+
+.tab-content .tab-pane{
+  margin-top: -20px;
+
+}
+
+
+.tab-content-inner{
+  font-size: 15px;
+  background-color: @primary;
+  color: #ffffff;
+}
+
+.tab-content-inner .tab-pane{
+  background-color: #cccccc;
+}
+
+.tab-content-img{
+  width: 20%;
 }
