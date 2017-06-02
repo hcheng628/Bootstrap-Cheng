@@ -21,18 +21,11 @@
   margin: 0 0 0 0;
 }
 
-
 .navbar {
-  margin-bottom: 20px;
   background: @primary url(../img/navbar.png) repeat;
   border: 1px #cccccc solid;
 
 }
-
-/*
-, .navbar-default a:hover
-, .navbar-default .navbar-nav>li>a
- */
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover{
   background: none;
@@ -40,10 +33,8 @@
   font-weight: bold;
 }
 
-
 #product-list .product-info{
   align-content: center;
-  // border: 1px solid #cccccc;
 }
 
 #product-list .product-info img{
@@ -69,9 +60,13 @@
 }
 
 .jumbotron{
-  padding: 0 0 0 0 !important;
-  margin: 0 0 0 0 !important;
+  padding: 0 !important;
   overflow: auto !important;
+  height: 275px;
+}
+
+.jumbotron p{
+  font-size: 15px;
 }
 
 .tablist{
@@ -79,24 +74,32 @@
   padding: 0;
   margin: 0;
   width: 30%;
+  height: 100%;
 }
 
 .tablist li{
-  color: #666666;
+  background-color: #cccccc;
   list-style: none;
+  color: #666666;
   font-size: 15px;
-  text-decoration: none;
-  width: 100%;
   padding: 15px 10px;
   padding-left: 20px;
   margin-bottom: 5px;
-  background-color: #cccccc;
+  width: 100%;
+}
+
+.tablist li.active a{
+  color: #ffffff;
+}
+.tablist a{
+  color: #666666;
+  display: block;
+  text-decoration: none;
 }
 
 .tablist li:hover{
   color: #ffffff;
   display: block;
-  text-decoration: none;
   background-color: @primary;
 }
 
@@ -108,32 +111,68 @@
   background-color: @primary;
 }
 
-.tablist li.active a{
-  color: #ffffff;
-}
-
-.tablist a{
-  color: #666666;
-  display: block;
-  text-decoration: none;
+.tab-content{
+  background-color: @primary;
+  float: right;
+  color: white;
+  height: 275px;
+  overflow: hidden;
+  width:70%;
 }
 
 .tab-content .tab-pane{
   margin-top: -20px;
-
+  width: 100%;
 }
-
 
 .tab-content-inner{
-  font-size: 15px;
-  background-color: @primary;
+  float: left;
   color: #ffffff;
-}
-
-.tab-content-inner .tab-pane{
-  background-color: #cccccc;
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 40%;
 }
 
 .tab-content-img{
-  width: 20%;
+  width: 45%;
+  height: 80%;
+}
+
+@media(max-width: 1200px){
+  .tab-content-img{
+    display: none;
+  }
+
+  .tab-content-inner{
+    width: 80%;
+    float: none;
+  }
+}
+
+@media(max-width: 960px){
+  header form{
+    width: 100% !important;
+  }
+
+  .navbar a{
+    color: white !important;
+    background-color: @primary !important;
+    border: none !important;
+    margin: 0 !important;
+  }
+}
+
+@media(max-width: 600px){
+  .tab-content{
+    height: 100%;
+  }
+}
+
+footer{
+  height: 60px;
+  background-color: #cccccc;
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 13px;
 }
