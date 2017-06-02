@@ -12,18 +12,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/common.css" rel="stylesheet">
-    <link href="./css/pages.css" rel="stylesheet">
-
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="./css/vendors/animate.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -43,7 +32,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
     </div>
 </nav>
 
@@ -53,15 +42,13 @@
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
     </div>
-
-</div><!-- /.container -->
-
-
+</div>
 <script src="./js/jQuery/jquery-3.2.1.min.js"></script>
-<script src="./js/TableSorter/jquery.tablesorter.min.js"></script>
+<script src="./js/WOW/WOW.js"></script>
 <script src="./js/Bootstrap/bootstrap.js"></script>
 <script src="./js/custom.js"></script>
 <script>
+    new WOW().init();
 </script>
 </body>
 </html>
