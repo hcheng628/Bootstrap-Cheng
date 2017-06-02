@@ -19,3 +19,27 @@
 .jumbotron .col-md-4{
     width: 40%;
 }
+
+#feature-list{
+    background: #f4f4f4;
+}
+
+#feature-list .container{
+    margin-top: 15px;
+    height: 250px;
+}
+
+.feature-list-item{
+    text-align: center;
+    color: #2fa4e7;
+}
+
+.feature-list-item-desc{
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
