@@ -1,0 +1,74 @@
+#services-what-we-do{
+    background-color: #2fa4e7;
+    min-height: 80px;
+    max-height: 120px;
+}
+
+
+#services-what-we-do .row{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#services-what-we-do h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline;
+    color: white;
+}
+
+#services-what-we-do span{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: dimgray;
+}
+
+
+#services-what-we-do-img .col-md-12 img{
+    width: 100%;
+}
+
+#services-more-services h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    color: dimgray;
+}
+
+#services-more-services .container{
+    width: 80%;
+}
+
+#services-what-we-do-img .col-md-8{
+    width: 60%;
+}
+
+#services-what-we-do-img .col-md-4{
+    width: 40%;
+}
+
+#services-tabs .container{
+    width: 80%;
+}
+
+#services-images .container {
+    width: 80%;
+}
+
+#services-images h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    color: dimgray;
+}
+
+#services-images .col-md-4 , .col-sm-4{
+    width: 33%;
+}
+
+
+#services-images .services-images-img{
+    width: 100%;
+}
+

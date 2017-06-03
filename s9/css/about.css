@@ -1,0 +1,69 @@
+#about-abt-us .row{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#about-abt-us .row h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 33px !important;
+    display: inline;
+    font-weight: 900 !important;
+}
+
+#about-welcome .col-md-5 img{
+    width: 100%;
+}
+
+#about-welcome .col-md-7{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+#about-welcome .col-md-7 h1{
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#about-people .container .col-md-4{
+    width: 30%;
+    margin: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+}
+
+#about-people .container .col-md-4 img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#about-people .container .col-md-4 h3{
+    display: inline;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#about-people .container .col-md-4 .about-title{
+    font-weight: 900;
+}
+
+#about-people .fa-stack{
+    color: #2fa4e7;
+}
+
+#about-people .about-people-meet-team{
+    font-size: 33px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#about-client .about-people-meet-team{
+    font-size: 33px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#about-client .about-client-img{
+    width: 100%;
+}
