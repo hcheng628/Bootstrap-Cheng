@@ -43,3 +43,43 @@
     text-transform: uppercase;
 }
 
+
+#solgan .col-md-12{
+    height: 200px;
+    background-color: #e44d26;
+    color: #ffffff;
+    text-align: center;
+
+}
+#solgan .col-md-12 h1{
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+#business-highlights li{
+    list-style: none;
+}
+
+
+#business-highlights h1{
+    color: #0f0f0f;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+
+.business-highlights-img{
+    height: 100%;
+}
+
+#business-highlights .row{
+    height: 350px;
+}
+
+#business-highlights .col-md-6{
+    font-size: 17px;
+    color: #0f0f0f;
+    width: 50%;
+    height: 100%;
+}
