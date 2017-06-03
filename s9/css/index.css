@@ -78,8 +78,34 @@
 }
 
 #business-highlights .col-md-6{
-    font-size: 17px;
+    font-size: 18px;
     color: #0f0f0f;
     width: 50%;
     height: 100%;
+}
+
+#more-features{
+    background-color: #e44d26;
+}
+
+#more-features .col-md-6{
+    font-size: 18px;
+    color: #0f0f0f;
+    width: 50%;
+    height: 100%;
+}
+
+
+#more-features .col-md-6 .container h1{
+    color: #0f0f0f;
+    text-transform: uppercase;
+}
+
+#more-features .col-md-6 .container ul{
+    color: #0f0f0f;
+    list-style: none;
+}
+
+.more-features-img{
+    border-radius: 50%;
 }
