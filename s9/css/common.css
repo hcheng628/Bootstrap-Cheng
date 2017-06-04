@@ -1,5 +1,4 @@
 body{
- /*   margin-top: 50px; */
     margin-top: 50px;
     padding-top: 50px;
     font-family: 'Work Sans', sans-serif;
@@ -8,7 +7,6 @@ body{
 .navbar{
     font-family: 'Work Sans', sans-serif;
     background: #f4f4f4;
-    /* border-bottom: 1px solid #cccccc; */
 }
 
 .navbar-brand{
@@ -56,4 +54,10 @@ footer{
     padding-bottom: 15px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+@media (min-width: 500px){
+    .collapse{
+       display: none;
+    }
 }
