@@ -1,0 +1,95 @@
+#blog-main-carousel .carousel-caption {
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: left;
+    padding:10px;
+    background:rgba(0,0,0,0.6);
+}
+
+#blog-main-carousel .carousel-inner .carousel-caption h3{
+    color: white;
+}
+#blog-main-carousel .carousel-inner .carousel-caption p{
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: block;
+    text-align: left;
+}
+
+#carousel .col-md-4{
+    width: 35%;
+    height: 100%;
+}
+
+#carousel .col-md-8{
+    width: 65%;
+    height: 100% !important;
+}
+
+.car-select-view{
+    width:80px;
+    height:100%;
+    float:left;
+    margin-right:5px;
+}
+
+#carousel .col-md-4 .list-group{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#carousel .list-group li.active{
+    font-weight: 900;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-color: #ffffff;
+    border: none;
+}
+
+#carousel .well{
+    margin: 0;
+    padding: 0;
+}
+
+#carousel .col-md-4 .list-group-item{
+    border-radius: 0;
+}
+
+#carousel .col-md-4 .list-group-item h5{
+    font-size: 17px;
+    padding:0 !important;
+    margin:0 !important;
+    padding-top:5px;
+}
+
+#carousel .col-md-4 .list-group-item p{
+    padding:0;
+    margin: 0;
+}
+
+#carousel .col-md-4 .list-group-item a{
+    text-decoration: none;
+
+}
+
+#carousel .col-md-4 .list-group-item a:hover{
+    text-decoration: none;
+
+}
+
+
+#posts .col-md-8{
+    width: 65%;
+}
+
+#posts .col-md-8 img{
+    width: 100%;
+}
+
+.well-lg{
+    overflow: auto;
+}

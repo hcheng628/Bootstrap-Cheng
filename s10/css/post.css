@@ -1,0 +1,7 @@
+#posts .col-md-8 img{
+    width: 100%;
+}
+
+.well{
+    overflow: auto;
+}
